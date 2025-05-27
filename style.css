@@ -61,3 +61,22 @@ form button{
   cursor: pointer;
   display: block;
 }
+#search-result img {
+  width: 200px;
+  margin: 10px;
+  display: block;
+  height: auto;
+}
+#search-result {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+#search-result a {
+  text-decoration: none;
+  display: inline-block;
+}
