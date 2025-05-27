@@ -13,6 +13,10 @@ async function searchImages() {
   const response = await fetch(url);
   const data = await response.json();
 
+  if(page === 1){
+    searchResult.innerHTML = '';
+  }
+
   // console.log(data);
   const results = data.results;
 
@@ -25,7 +29,7 @@ async function searchImages() {
     imageLink.appendChild(image);
     searchResult.appendChild(imageLink);
   })
-  showMoreBtn.style.display = 'block';
+  showMoreBtn.style.display = 'hidden';
 }
 
 searchForm.addEventListener("submit", (e)=>{
